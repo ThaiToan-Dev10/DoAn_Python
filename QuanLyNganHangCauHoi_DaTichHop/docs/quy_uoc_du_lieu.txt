@@ -1,0 +1,43 @@
+QUY ƯỚC DỮ LIỆU CÂU HỎI
+=========================
+
+Tất cả chức năng quản lý câu hỏi, tạo đề và làm bài phải dùng chung
+file: data/cau_hoi.json
+
+Mỗi câu hỏi gồm các trường:
+
+- ma_cau_hoi: Mã duy nhất của câu hỏi, ví dụ CH001.
+- mon_hoc: Môn học của câu hỏi.
+- chu_de: Chủ đề kiến thức.
+- muc_do: Chỉ nhận Dễ, Trung bình hoặc Khó.
+- noi_dung: Nội dung câu hỏi.
+- phuong_an_a: Nội dung phương án A.
+- phuong_an_b: Nội dung phương án B.
+- phuong_an_c: Nội dung phương án C.
+- phuong_an_d: Nội dung phương án D.
+- dap_an_dung: Chỉ nhận A, B, C hoặc D.
+- nguon_cau_hoi: Nguồn của câu hỏi.
+
+Ví dụ:
+
+{
+    "ma_cau_hoi": "CH001",
+    "mon_hoc": "Tin học",
+    "chu_de": "Python cơ bản",
+    "muc_do": "Dễ",
+    "noi_dung": "Từ khóa nào dùng để định nghĩa hàm trong Python?",
+    "phuong_an_a": "func",
+    "phuong_an_b": "function",
+    "phuong_an_c": "def",
+    "phuong_an_d": "lambda",
+    "dap_an_dung": "C",
+    "nguon_cau_hoi": "Tài liệu Python cơ bản"
+}
+
+LƯU Ý CHO THÀNH VIÊN LÀM PHẦN ĐỀ THI
+=====================================
+
+1. Dùng đúng tên trường ở trên, không đổi phuong_an_a thành dap_an_a.
+2. Khi lưu câu hỏi vào đề thi, nên lưu ma_cau_hoi để tra cứu câu hỏi gốc.
+3. Không đọc file cau_hoi.json ở một thư mục riêng.
+4. Dùng FILE_CAU_HOI trong config.py để lấy đúng đường dẫn dữ liệu.

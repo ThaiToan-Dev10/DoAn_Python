@@ -1,0 +1,23 @@
+[
+    {
+        "ten_dang_nhap": "admin",
+        "mat_khau": "123456",
+        "ho_ten": "Quản trị viên",
+        "email": "admin@gmail.com",
+        "vai_tro": "admin"
+    },
+    {
+        "ten_dang_nhap": "user01",
+        "mat_khau": "123456",
+        "ho_ten": "Nguyễn Văn A",
+        "email": "user01@gmail.com",
+        "vai_tro": "user"
+    },
+    {
+        "ten_dang_nhap": "user02",
+        "mat_khau": "123456",
+        "ho_ten": "Phan Thái Huy Khanh",
+        "email": "huy03@gmail.com",
+        "vai_tro": "user"
+    }
+]

@@ -1,0 +1,359 @@
+[
+    {
+        "ma_de_thi": "DT001",
+        "ten_de_thi": "Kiểm tra Python cơ bản",
+        "mon_hoc": "Tin học",
+        "thoi_gian_lam_bai": 15,
+        "danh_sach_ma_cau_hoi": [
+            "CH001",
+            "CH002",
+            "API001"
+        ],
+        "ma_tran_muc_do": {
+            "Dễ": 0,
+            "Trung bình": 0,
+            "Khó": 0
+        },
+        "seed": 0,
+        "thu_tu_phuong_an": {
+            "CH001": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "CH002": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "API001": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ]
+        },
+        "trang_thai": "Mở"
+    },
+    {
+        "ma_de_thi": "DT002",
+        "ten_de_thi": "Đề kiểm tra Tin học",
+        "mon_hoc": "Tin học",
+        "thoi_gian_lam_bai": 20,
+        "danh_sach_ma_cau_hoi": [
+            "CH002",
+            "CH007",
+            "API004",
+            "CH006",
+            "API001"
+        ],
+        "ma_tran_muc_do": {
+            "Dễ": 0,
+            "Trung bình": 0,
+            "Khó": 0
+        },
+        "seed": 0,
+        "thu_tu_phuong_an": {
+            "CH002": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "CH007": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "API004": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "CH006": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "API001": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ]
+        },
+        "trang_thai": "Mở"
+    },
+    {
+        "ma_de_thi": "DT003",
+        "ten_de_thi": "Đề Thi thử số 1",
+        "mon_hoc": "Tin học",
+        "thoi_gian_lam_bai": 10,
+        "danh_sach_ma_cau_hoi": [
+            "CH005",
+            "CH002",
+            "API004"
+        ],
+        "ma_tran_muc_do": {
+            "Dễ": 0,
+            "Trung bình": 0,
+            "Khó": 0
+        },
+        "seed": 0,
+        "thu_tu_phuong_an": {
+            "CH005": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "CH002": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "API004": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ]
+        },
+        "trang_thai": "Mở"
+    },
+    {
+        "ma_de_thi": "DT004",
+        "ten_de_thi": "Hình Học",
+        "mon_hoc": "Toán",
+        "thoi_gian_lam_bai": 20,
+        "danh_sach_ma_cau_hoi": [
+            "CH016",
+            "CH008",
+            "CH009"
+        ],
+        "ma_tran_muc_do": {
+            "Dễ": 0,
+            "Trung bình": 0,
+            "Khó": 0
+        },
+        "seed": 0,
+        "thu_tu_phuong_an": {
+            "CH016": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "CH008": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "CH009": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ]
+        },
+        "trang_thai": "Mở"
+    },
+    {
+        "ma_de_thi": "DT005",
+        "ten_de_thi": "Python",
+        "mon_hoc": "Tin học",
+        "thoi_gian_lam_bai": 20,
+        "danh_sach_ma_cau_hoi": [
+            "API001",
+            "CH003",
+            "CH006",
+            "CH005",
+            "CH001",
+            "CH004",
+            "CH002",
+            "API003",
+            "CH007",
+            "API002"
+        ],
+        "ma_tran_muc_do": {
+            "Dễ": 0,
+            "Trung bình": 0,
+            "Khó": 0
+        },
+        "seed": 0,
+        "thu_tu_phuong_an": {
+            "API001": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "CH003": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "CH006": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "CH005": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "CH001": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "CH004": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "CH002": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "API003": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "CH007": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "API002": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ]
+        },
+        "trang_thai": "Mở"
+    },
+    {
+        "ma_de_thi": "DT006",
+        "ten_de_thi": "Đại số",
+        "mon_hoc": "Tin học",
+        "thoi_gian_lam_bai": 20,
+        "danh_sach_ma_cau_hoi": [
+            "API002",
+            "API005",
+            "API004",
+            "CH002",
+            "CH001"
+        ],
+        "ma_tran_muc_do": {
+            "Dễ": 2,
+            "Trung bình": 2,
+            "Khó": 1
+        },
+        "seed": 2026,
+        "thu_tu_phuong_an": {
+            "API002": [
+                "C",
+                "D",
+                "B",
+                "A"
+            ],
+            "API005": [
+                "A",
+                "D",
+                "C",
+                "B"
+            ],
+            "API004": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "CH002": [
+                "D",
+                "C",
+                "A",
+                "B"
+            ],
+            "CH001": [
+                "C",
+                "D",
+                "B",
+                "A"
+            ]
+        },
+        "trang_thai": "Mở"
+    },
+    {
+        "ma_de_thi": "DT007",
+        "ten_de_thi": "C++",
+        "mon_hoc": "Tin học",
+        "thoi_gian_lam_bai": 20,
+        "danh_sach_ma_cau_hoi": [
+            "API002",
+            "API005",
+            "API004",
+            "CH002",
+            "CH001"
+        ],
+        "ma_tran_muc_do": {
+            "Dễ": 2,
+            "Trung bình": 2,
+            "Khó": 1
+        },
+        "seed": 2026,
+        "thu_tu_phuong_an": {
+            "API002": [
+                "C",
+                "D",
+                "B",
+                "A"
+            ],
+            "API005": [
+                "A",
+                "D",
+                "C",
+                "B"
+            ],
+            "API004": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "CH002": [
+                "D",
+                "C",
+                "A",
+                "B"
+            ],
+            "CH001": [
+                "C",
+                "D",
+                "B",
+                "A"
+            ]
+        },
+        "trang_thai": "Mở"
+    }
+]

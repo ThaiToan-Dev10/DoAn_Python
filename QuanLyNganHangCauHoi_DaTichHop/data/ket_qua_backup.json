@@ -1,0 +1,111 @@
+[
+    {
+        "ma_ket_qua": "KQ001",
+        "ten_dang_nhap": "user01",
+        "ma_de_thi": "DT003",
+        "so_cau_dung": 3,
+        "tong_so_cau": 3,
+        "diem": 10.0,
+        "cau_tra_loi": {
+            "CH005": "B",
+            "CH002": "C",
+            "API004": "B"
+        },
+        "thoi_gian_nop_bai": "14/10/2026 10:28:05"
+    },
+    {
+        "ma_ket_qua": "KQ002",
+        "ten_dang_nhap": "user01",
+        "ma_de_thi": "DT001",
+        "so_cau_dung": 2,
+        "tong_so_cau": 3,
+        "diem": 6.67,
+        "cau_tra_loi": {
+            "CH001": "B",
+            "CH002": "C",
+            "API001": "D"
+        },
+        "thoi_gian_nop_bai": "14/10/2026 10:40:20"
+    },
+    {
+        "ma_ket_qua": "KQ003",
+        "ten_dang_nhap": "user02",
+        "ma_de_thi": "DT003",
+        "so_cau_dung": 2,
+        "tong_so_cau": 3,
+        "diem": 6.67,
+        "cau_tra_loi": {
+            "CH005": "B",
+            "CH002": "C",
+            "API004": "D"
+        },
+        "thoi_gian_nop_bai": "14/10/2026 10:45:40"
+    },
+    {
+        "ma_ket_qua": "KQ004",
+        "ten_dang_nhap": "user01",
+        "ma_de_thi": "DT001",
+        "so_cau_dung": 3,
+        "tong_so_cau": 3,
+        "diem": 10.0,
+        "cau_tra_loi": {
+            "CH001": "B",
+            "CH002": "C",
+            "API001": "C"
+        },
+        "thoi_gian_nop_bai": "14/10/2026 12:23:02"
+    },
+    {
+        "ma_ket_qua": "KQ005",
+        "ten_dang_nhap": "user01",
+        "ma_de_thi": "DT005",
+        "so_cau_dung": 8,
+        "tong_so_cau": 10,
+        "diem": 8.0,
+        "cau_tra_loi": {
+            "API001": "C",
+            "CH003": "B",
+            "CH006": "A",
+            "CH005": "B",
+            "CH001": "C",
+            "CH004": "C",
+            "CH002": "C",
+            "API003": "C",
+            "CH007": "C",
+            "API002": "C"
+        },
+        "thoi_gian_nop_bai": "14/10/2026 12:36:18"
+    },
+    {
+        "ma_ket_qua": "KQ006",
+        "ten_dang_nhap": "user02",
+        "ma_de_thi": "DT007",
+        "so_cau_dung": 2,
+        "tong_so_cau": 5,
+        "diem": 4.0,
+        "cau_tra_loi": {
+            "API002": "B",
+            "API005": "D",
+            "API004": "B",
+            "CH002": "C",
+            "CH001": "A"
+        },
+        "thoi_gian_nop_bai": "14/10/2026 22:38:32"
+    },
+    {
+        "ma_ket_qua": "KQ007",
+        "ten_dang_nhap": "user02",
+        "ma_de_thi": "DT008",
+        "so_cau_dung": 3,
+        "tong_so_cau": 5,
+        "diem": 6.0,
+        "cau_tra_loi": {
+            "API002": "B",
+            "API005": "C",
+            "API004": "B",
+            "CH002": "C",
+            "CH001": "B"
+        },
+        "thoi_gian_nop_bai": "14/10/2026 22:44:41"
+    }
+]
