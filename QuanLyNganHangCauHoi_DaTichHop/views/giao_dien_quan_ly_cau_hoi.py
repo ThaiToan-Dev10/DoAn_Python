@@ -1,5 +1,10 @@
 import tkinter as tk
-from tkinter import messagebox, ttk, simpledialog
+from tkinter import (
+    filedialog,
+    messagebox,
+    simpledialog,
+    ttk
+)
 
 from managers.quan_ly_cau_hoi import (
     DAP_AN_HOP_LE,
@@ -462,6 +467,18 @@ class GiaoDienQuanLyCauHoi:
 
         ttk.Button(
             khung_nut,
+            text="Xuất TXT",
+            command=self.__xuat_file_txt
+        ).pack(side="left", padx=6)
+
+        ttk.Button(
+            khung_nut,
+            text="Xuất CSV",
+            command=self.__xuat_file_csv
+        ).pack(side="left", padx=6)
+
+        ttk.Button(
+            khung_nut,
             text="Quay lại",
             command=self.__dong_cua_so
         ).pack(side="left", padx=6)
@@ -725,6 +742,78 @@ class GiaoDienQuanLyCauHoi:
         self.__loc_chu_de.set("Tất cả")
         self.__loc_muc_do.set("Tất cả")
         self.__hien_thi_danh_sach()
+
+    def __xuat_file_txt(self):
+        duong_dan = filedialog.asksaveasfilename(
+            parent=self.__cua_so,
+            title="Chọn nơi lưu danh sách câu hỏi",
+            defaultextension=".txt",
+            initialfile="danh_sach_cau_hoi.txt",
+            filetypes=(
+                ("Tệp văn bản", "*.txt"),
+                ("Tất cả tệp", "*.*")
+            )
+        )
+
+        if duong_dan == "":
+            return
+
+        thanh_cong, thong_bao = (
+            self.__quan_ly_cau_hoi
+            .xuat_danh_sach_cau_hoi(
+                duong_dan
+            )
+        )
+
+        if not thanh_cong:
+            messagebox.showerror(
+                "Xuất TXT thất bại",
+                thong_bao,
+                parent=self.__cua_so
+            )
+            return
+
+        messagebox.showinfo(
+            "Xuất TXT thành công",
+            thong_bao,
+            parent=self.__cua_so
+        )
+
+    def __xuat_file_csv(self):
+        duong_dan = filedialog.asksaveasfilename(
+            parent=self.__cua_so,
+            title="Chọn nơi lưu danh sách câu hỏi",
+            defaultextension=".csv",
+            initialfile="danh_sach_cau_hoi.csv",
+            filetypes=(
+                ("Tệp CSV", "*.csv"),
+                ("Tất cả tệp", "*.*")
+            )
+        )
+
+        if duong_dan == "":
+            return
+
+        thanh_cong, thong_bao = (
+            self.__quan_ly_cau_hoi
+            .xuat_danh_sach_cau_hoi(
+                duong_dan
+            )
+        )
+
+        if not thanh_cong:
+            messagebox.showerror(
+                "Xuất CSV thất bại",
+                thong_bao,
+                parent=self.__cua_so
+            )
+            return
+
+        messagebox.showinfo(
+            "Xuất CSV thành công",
+            thong_bao,
+            parent=self.__cua_so
+        )
 
     def __lay_cau_hoi_tu_api(self):
         so_luong = simpledialog.askinteger(

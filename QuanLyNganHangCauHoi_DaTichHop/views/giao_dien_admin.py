@@ -21,6 +21,9 @@ from views.giao_dien_quan_ly_de_thi import (
 from views.giao_dien_xem_ket_qua import (
     GiaoDienXemKetQua
 )
+from views.giao_dien_doi_mat_khau import (
+    GiaoDienDoiMatKhau
+)
 
 
 class GiaoDienAdmin:
@@ -96,7 +99,7 @@ class GiaoDienAdmin:
                 self.__hien_thi_lai_admin
             )
         )
-    
+
         self.__cua_so.withdraw()
 
     def __mo_xem_ket_qua(self):
@@ -109,12 +112,14 @@ class GiaoDienAdmin:
                 self.__hien_thi_lai_admin
             )
         )
-    
+
         self.__cua_so.withdraw()
 
     def __mo_giao_dien_thong_ke(self):
-        self.__quan_ly_thong_ke = QuanLyThongKe()
-    
+        self.__quan_ly_thong_ke = (
+            QuanLyThongKe()
+        )
+
         self.__giao_dien_thong_ke = (
             GiaoDienThongKe(
                 self.__cua_so,
@@ -124,6 +129,15 @@ class GiaoDienAdmin:
         )
 
         self.__cua_so.withdraw()
+
+    def __mo_giao_dien_doi_mat_khau(self):
+        self.__giao_dien_doi_mat_khau = (
+            GiaoDienDoiMatKhau(
+                self.__cua_so,
+                self.__quan_ly_tai_khoan,
+                self.__tai_khoan
+            )
+        )
 
     def __tao_giao_dien(self):
         self.__khung_chinh = tk.Frame(
@@ -148,7 +162,7 @@ class GiaoDienAdmin:
         )
 
         tieu_de.pack(
-            pady=40
+            pady=35
         )
 
         loi_chao = tk.Label(
@@ -173,7 +187,7 @@ class GiaoDienAdmin:
         )
 
         khung_chuc_nang.pack(
-            pady=30
+            pady=25
         )
 
         nut_quan_ly_tai_khoan = tk.Button(
@@ -189,7 +203,7 @@ class GiaoDienAdmin:
             row=0,
             column=0,
             padx=15,
-            pady=15
+            pady=12
         )
 
         nut_quan_ly_cau_hoi = tk.Button(
@@ -205,7 +219,7 @@ class GiaoDienAdmin:
             row=0,
             column=1,
             padx=15,
-            pady=15
+            pady=12
         )
 
         nut_quan_ly_de_thi = tk.Button(
@@ -221,7 +235,7 @@ class GiaoDienAdmin:
             row=1,
             column=0,
             padx=15,
-            pady=15
+            pady=12
         )
 
         nut_xem_ket_qua = tk.Button(
@@ -237,7 +251,7 @@ class GiaoDienAdmin:
             row=1,
             column=1,
             padx=15,
-            pady=15
+            pady=12
         )
 
         nut_thong_ke = tk.Button(
@@ -250,7 +264,23 @@ class GiaoDienAdmin:
         )
 
         nut_thong_ke.pack(
-            pady=10
+            pady=(5, 8)
+        )
+
+        nut_doi_mat_khau = tk.Button(
+            self.__khung_chinh,
+            text="Đổi mật khẩu",
+            font=("Arial", 11, "bold"),
+            bg="#FF9800",
+            fg="white",
+            width=18,
+            command=(
+                self.__mo_giao_dien_doi_mat_khau
+            )
+        )
+
+        nut_doi_mat_khau.pack(
+            pady=8
         )
 
         nut_dang_xuat = tk.Button(
@@ -264,7 +294,7 @@ class GiaoDienAdmin:
         )
 
         nut_dang_xuat.pack(
-            pady=20
+            pady=(8, 20)
         )
 
     def __dang_xuat(self):

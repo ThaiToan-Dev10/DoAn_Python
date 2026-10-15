@@ -19,5 +19,12 @@
         "ho_ten": "Phan Thái Huy Khanh",
         "email": "huy03@gmail.com",
         "vai_tro": "user"
+    },
+    {
+        "ten_dang_nhap": "user03",
+        "mat_khau": "123456",
+        "ho_ten": "Trần Gia Hào",
+        "email": "hao12@gmail.com",
+        "vai_tro": "user"
     }
 ]

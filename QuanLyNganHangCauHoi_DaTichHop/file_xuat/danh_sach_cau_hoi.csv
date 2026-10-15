@@ -1,0 +1,22 @@
+﻿ma_cau_hoi,mon_hoc,chu_de,muc_do,noi_dung,phuong_an_a,phuong_an_b,phuong_an_c,phuong_an_d,dap_an_dung,nguon_cau_hoi
+CH001,Tin học,Python cơ bản,Dễ,Kiểu dữ liệu nào dùng để lưu một dãy phần tử có thứ tự và có thể thay đổi trong Python?,tuple,list,str,int,B,Tài liệu Python cơ bản
+CH002,Tin học,Python cơ bản,Dễ,Từ khóa nào dùng để định nghĩa một hàm trong Python?,func,function,def,lambda,C,Tài liệu Python cơ bản
+CH003,Tin học,Lập trình hướng đối tượng,Trung bình,Từ khóa nào được dùng để khai báo một lớp trong Python?,object,class,new,struct,B,Bài giảng OOP
+CH004,Tin học,Cấu trúc dữ liệu,Trung bình,Cấu trúc dữ liệu nào hoạt động theo nguyên tắc vào sau ra trước (LIFO)?,Queue,Tree,Stack,Graph,C,Bài giảng cấu trúc dữ liệu
+CH005,Tin học,Thuật toán,Khó,Độ phức tạp thời gian trung bình của tìm kiếm nhị phân trên mảng đã sắp xếp là gì?,O(1),O(log n),O(n),O(n²),B,Bài giảng thuật toán
+CH006,Tin học,Cơ sở dữ liệu,Dễ,SQL là viết tắt của cụm từ nào?,Structured Query Language,Simple Question Language,Sequential Query List,System Quality Logic,A,Bài giảng cơ sở dữ liệu
+CH007,Tin học,Mạng máy tính,Trung bình,Giao thức nào thường được sử dụng để truyền trang web có mã hóa TLS?,FTP,HTTP,HTTPS,SMTP,C,Bài giảng mạng máy tính
+CH008,Toán,Đại số,Dễ,Kết quả của 7 × 8 là bao nhiêu?,54,56,58,64,B,Sách Toán cơ bản
+CH009,Toán,Hình học,Trung bình,Tổng ba góc trong một tam giác Euclid bằng bao nhiêu độ?,90°,180°,270°,360°,B,Sách Hình học
+CH010,Vật lý,Cơ học,Dễ,Đơn vị đo lực trong hệ SI là gì?,Joule,Watt,Newton,Pascal,C,Sách Vật lý
+CH011,Vật lý,Điện học,Trung bình,"Theo định luật Ôm, cường độ dòng điện bằng đại lượng nào?",U × R,U / R,R / U,U + R,B,Sách Vật lý
+CH012,Hóa học,Hóa học cơ bản,Dễ,Ký hiệu hóa học của oxy là gì?,Ox,O,Oy,Om,B,Sách Hóa học
+CH013,Hóa học,Hóa học cơ bản,Khó,"Ở điều kiện thường, pH nhỏ hơn 7 thường biểu thị dung dịch có tính chất gì?",Bazơ,Trung tính,Axit,Muối luôn trung tính,C,Sách Hóa học
+CH014,Tiếng Anh,Ngữ pháp,Trung bình,Chọn dạng đúng: She ___ to school every day.,go,going,goes,gone,C,Tài liệu tiếng Anh
+CH015,Tiếng Anh,Từ vựng,Khó,Từ nào gần nghĩa nhất với “rapid”?,slow,quick,weak,quiet,B,Tài liệu tiếng Anh
+CH016,Toán,Đại số,Dễ,1+1=?,11,2,3,1,B,Tự tạo
+API001,Tin học,Science: Computers,Khó,CMOS is tech used for constructing integrated circuits. What does CMOS stand for?,Computer-made operating system,Computer-made oscillating static,Complementary metal–oxide–semiconductor,Complementary magnetic-ohms-semiconductor,C,Open Trivia DB
+API002,Tin học,Science: Computers,Khó,What type of sound chip does the Super Nintendo Entertainment System (SNES) have?,ADPCM Sampler,Programmable Sound Generator (PSG),FM Synthesizer,PCM Sampler,A,Open Trivia DB
+API003,Tin học,Science: Computers,Trung bình,Whistler was the codename of this Microsoft Operating System.,Windows 2000,Windows 7,Windows XP,Windows 95,C,Open Trivia DB
+API004,Tin học,Science: Computers,Trung bình,"What does the term MIME stand for, in regards to computing?",Mail Internet Mail Exchange,Multipurpose Internet Mail Extensions,Mail Interleave Method Exchange,Multipurpose Interleave Mail Exchange,B,Open Trivia DB
+API005,Tin học,Science: Computers,Trung bình,Which of these programming languages is a low-level language?,C#,Assembly,Pascal,Python,B,Open Trivia DB

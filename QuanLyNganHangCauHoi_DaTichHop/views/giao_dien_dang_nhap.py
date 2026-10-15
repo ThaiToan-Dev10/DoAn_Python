@@ -224,12 +224,11 @@ class GiaoDienDangNhap:
                 )
             )
         else:
-            self.__giao_dien_nguoi_dung = (
-                GiaoDienNguoiDung(
-                    self.__cua_so,
-                    tai_khoan,
-                    self.__hien_thi_lai_dang_nhap
-                )
+            self.__giao_dien_nguoi_dung = GiaoDienNguoiDung(
+                self.__cua_so,
+                tai_khoan,
+                self.__quan_ly_tai_khoan,
+                self.__hien_thi_lai_dang_nhap
             )
 
     def __hien_thi_lai_dang_nhap(self):

@@ -11,6 +11,9 @@ from views.giao_dien_chon_de_thi import (
 from views.giao_dien_xem_ket_qua import (
     GiaoDienXemKetQua
 )
+from views.giao_dien_doi_mat_khau import (
+    GiaoDienDoiMatKhau
+)
 
 
 class GiaoDienNguoiDung:
@@ -18,24 +21,33 @@ class GiaoDienNguoiDung:
         self,
         cua_so,
         tai_khoan,
+        quan_ly_tai_khoan,
         ham_dang_xuat
     ):
         self.__cua_so = cua_so
         self.__tai_khoan = tai_khoan
-        self.__ham_dang_xuat = ham_dang_xuat
 
-        # Dùng chung một ngân hàng câu hỏi
-        self.__quan_ly_cau_hoi = QuanLyCauHoi()
-
-        # Quản lý đề thi sử dụng ngân hàng câu hỏi trên
-        self.__quan_ly_de_thi = QuanLyDeThi(
-            self.__quan_ly_cau_hoi
+        self.__quan_ly_tai_khoan = (
+            quan_ly_tai_khoan
         )
 
-        # Quản lý kết quả dùng chung câu hỏi và đề thi
-        self.__quan_ly_ket_qua = QuanLyKetQua(
-            self.__quan_ly_cau_hoi,
-            self.__quan_ly_de_thi
+        self.__ham_dang_xuat = ham_dang_xuat
+
+        self.__quan_ly_cau_hoi = (
+            QuanLyCauHoi()
+        )
+
+        self.__quan_ly_de_thi = (
+            QuanLyDeThi(
+                self.__quan_ly_cau_hoi
+            )
+        )
+
+        self.__quan_ly_ket_qua = (
+            QuanLyKetQua(
+                self.__quan_ly_cau_hoi,
+                self.__quan_ly_de_thi
+            )
         )
 
         self.__tao_giao_dien()
@@ -106,10 +118,26 @@ class GiaoDienNguoiDung:
             fg="white",
             width=25,
             height=2,
-            command=self.__mo_chuc_nang_xem_ket_qua
+            command=(
+                self.__mo_chuc_nang_xem_ket_qua
+            )
         )
 
         nut_xem_ket_qua.pack(pady=10)
+
+        nut_doi_mat_khau = tk.Button(
+            self.__khung_chinh,
+            text="Đổi mật khẩu",
+            font=("Arial", 11, "bold"),
+            bg="#FF9800",
+            fg="white",
+            width=18,
+            command=(
+                self.__mo_giao_dien_doi_mat_khau
+            )
+        )
+
+        nut_doi_mat_khau.pack(pady=10)
 
         nut_dang_xuat = tk.Button(
             self.__khung_chinh,
@@ -141,6 +169,15 @@ class GiaoDienNguoiDung:
                 self.__quan_ly_ket_qua,
                 self.__quan_ly_de_thi,
                 self.__tai_khoan.ten_dang_nhap
+            )
+        )
+
+    def __mo_giao_dien_doi_mat_khau(self):
+        self.__giao_dien_doi_mat_khau = (
+            GiaoDienDoiMatKhau(
+                self.__cua_so,
+                self.__quan_ly_tai_khoan,
+                self.__tai_khoan
             )
         )
 

@@ -1,3 +1,5 @@
+import csv
+
 from config import FILE_CAU_HOI
 from models.cau_hoi import CauHoiTracNghiem
 from services.xu_ly_json import XuLyJSON
@@ -362,4 +364,257 @@ class QuanLyCauHoi:
         return (
             False,
             "Không thể lưu câu hỏi từ API"
+        )
+
+    def xuat_cau_hoi_ra_txt(
+        self,
+        duong_dan
+    ):
+        if duong_dan is None:
+            return False, "Bạn chưa chọn nơi lưu file"
+
+        duong_dan = str(duong_dan).strip()
+
+        if duong_dan == "":
+            return False, "Bạn chưa chọn nơi lưu file"
+
+        if len(self.__danh_sach_cau_hoi) == 0:
+            return False, "Không có câu hỏi để xuất"
+
+        try:
+            with open(
+                duong_dan,
+                "w",
+                encoding="utf-8"
+            ) as file:
+                file.write(
+                    "NGÂN HÀNG CÂU HỎI\n"
+                )
+
+                file.write(
+                    "Tổng số câu hỏi: "
+                    + str(
+                        len(
+                            self.__danh_sach_cau_hoi
+                        )
+                    )
+                    + "\n"
+                )
+
+                file.write(
+                    "=" * 70
+                    + "\n\n"
+                )
+
+                so_thu_tu = 1
+
+                for cau_hoi in (
+                    self.__danh_sach_cau_hoi
+                ):
+                    file.write(
+                        "CÂU "
+                        + str(so_thu_tu)
+                        + "\n"
+                    )
+
+                    file.write(
+                        "Mã câu hỏi: "
+                        + str(cau_hoi.ma_cau_hoi)
+                        + "\n"
+                    )
+
+                    file.write(
+                        "Môn học: "
+                        + str(cau_hoi.mon_hoc)
+                        + "\n"
+                    )
+
+                    file.write(
+                        "Chủ đề: "
+                        + str(cau_hoi.chu_de)
+                        + "\n"
+                    )
+
+                    file.write(
+                        "Mức độ: "
+                        + str(cau_hoi.muc_do)
+                        + "\n"
+                    )
+
+                    file.write(
+                        "Nội dung: "
+                        + str(cau_hoi.noi_dung)
+                        + "\n"
+                    )
+
+                    file.write(
+                        "A. "
+                        + str(cau_hoi.phuong_an_a)
+                        + "\n"
+                    )
+
+                    file.write(
+                        "B. "
+                        + str(cau_hoi.phuong_an_b)
+                        + "\n"
+                    )
+
+                    file.write(
+                        "C. "
+                        + str(cau_hoi.phuong_an_c)
+                        + "\n"
+                    )
+
+                    file.write(
+                        "D. "
+                        + str(cau_hoi.phuong_an_d)
+                        + "\n"
+                    )
+
+                    file.write(
+                        "Đáp án đúng: "
+                        + str(cau_hoi.dap_an_dung)
+                        + "\n"
+                    )
+
+                    file.write(
+                        "Nguồn: "
+                        + str(cau_hoi.nguon_cau_hoi)
+                        + "\n"
+                    )
+
+                    file.write(
+                        "-" * 70
+                        + "\n\n"
+                    )
+
+                    so_thu_tu += 1
+
+            return (
+                True,
+                "Xuất "
+                + str(
+                    len(self.__danh_sach_cau_hoi)
+                )
+                + " câu hỏi ra TXT thành công"
+            )
+
+        except PermissionError:
+            return (
+                False,
+                "Không có quyền ghi vào file TXT"
+            )
+
+        except OSError as loi:
+            return (
+                False,
+                "Không thể xuất file TXT: "
+                + str(loi)
+            )
+
+    def xuat_cau_hoi_ra_csv(
+        self,
+        duong_dan
+    ):
+        if duong_dan is None:
+            return False, "Bạn chưa chọn nơi lưu file"
+
+        duong_dan = str(duong_dan).strip()
+
+        if duong_dan == "":
+            return False, "Bạn chưa chọn nơi lưu file"
+
+        if len(self.__danh_sach_cau_hoi) == 0:
+            return False, "Không có câu hỏi để xuất"
+
+        ten_cac_cot = (
+            "ma_cau_hoi",
+            "mon_hoc",
+            "chu_de",
+            "muc_do",
+            "noi_dung",
+            "phuong_an_a",
+            "phuong_an_b",
+            "phuong_an_c",
+            "phuong_an_d",
+            "dap_an_dung",
+            "nguon_cau_hoi"
+        )
+
+        try:
+            with open(
+                duong_dan,
+                "w",
+                encoding="utf-8-sig",
+                newline=""
+            ) as file:
+                nguoi_ghi_csv = csv.DictWriter(
+                    file,
+                    fieldnames=ten_cac_cot
+                )
+
+                nguoi_ghi_csv.writeheader()
+
+                for cau_hoi in (
+                    self.__danh_sach_cau_hoi
+                ):
+                    nguoi_ghi_csv.writerow(
+                        cau_hoi.chuyen_thanh_dict()
+                    )
+
+            return (
+                True,
+                "Xuất "
+                + str(
+                    len(self.__danh_sach_cau_hoi)
+                )
+                + " câu hỏi ra CSV thành công"
+            )
+
+        except PermissionError:
+            return (
+                False,
+                "Không có quyền ghi vào file CSV"
+            )
+
+        except (OSError, csv.Error) as loi:
+            return (
+                False,
+                "Không thể xuất file CSV: "
+                + str(loi)
+            )
+
+    def xuat_danh_sach_cau_hoi(
+        self,
+        duong_dan
+    ):
+        if duong_dan is None:
+            return False, "Bạn chưa chọn nơi lưu file"
+
+        duong_dan = str(duong_dan).strip()
+
+        if duong_dan == "":
+            return False, "Bạn chưa chọn nơi lưu file"
+
+        duong_dan_chu_thuong = (
+            duong_dan.casefold()
+        )
+
+        if duong_dan_chu_thuong.endswith(
+            ".txt"
+        ):
+            return self.xuat_cau_hoi_ra_txt(
+                duong_dan
+            )
+
+        if duong_dan_chu_thuong.endswith(
+            ".csv"
+        ):
+            return self.xuat_cau_hoi_ra_csv(
+                duong_dan
+            )
+
+        return (
+            False,
+            "File xuất phải có đuôi .txt hoặc .csv"
         )

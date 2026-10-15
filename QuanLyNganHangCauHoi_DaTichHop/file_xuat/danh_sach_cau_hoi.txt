@@ -1,0 +1,298 @@
+NGÂN HÀNG CÂU HỎI
+Tổng số câu hỏi: 21
+======================================================================
+
+CÂU 1
+Mã câu hỏi: CH001
+Môn học: Tin học
+Chủ đề: Python cơ bản
+Mức độ: Dễ
+Nội dung: Kiểu dữ liệu nào dùng để lưu một dãy phần tử có thứ tự và có thể thay đổi trong Python?
+A. tuple
+B. list
+C. str
+D. int
+Đáp án đúng: B
+Nguồn: Tài liệu Python cơ bản
+----------------------------------------------------------------------
+
+CÂU 2
+Mã câu hỏi: CH002
+Môn học: Tin học
+Chủ đề: Python cơ bản
+Mức độ: Dễ
+Nội dung: Từ khóa nào dùng để định nghĩa một hàm trong Python?
+A. func
+B. function
+C. def
+D. lambda
+Đáp án đúng: C
+Nguồn: Tài liệu Python cơ bản
+----------------------------------------------------------------------
+
+CÂU 3
+Mã câu hỏi: CH003
+Môn học: Tin học
+Chủ đề: Lập trình hướng đối tượng
+Mức độ: Trung bình
+Nội dung: Từ khóa nào được dùng để khai báo một lớp trong Python?
+A. object
+B. class
+C. new
+D. struct
+Đáp án đúng: B
+Nguồn: Bài giảng OOP
+----------------------------------------------------------------------
+
+CÂU 4
+Mã câu hỏi: CH004
+Môn học: Tin học
+Chủ đề: Cấu trúc dữ liệu
+Mức độ: Trung bình
+Nội dung: Cấu trúc dữ liệu nào hoạt động theo nguyên tắc vào sau ra trước (LIFO)?
+A. Queue
+B. Tree
+C. Stack
+D. Graph
+Đáp án đúng: C
+Nguồn: Bài giảng cấu trúc dữ liệu
+----------------------------------------------------------------------
+
+CÂU 5
+Mã câu hỏi: CH005
+Môn học: Tin học
+Chủ đề: Thuật toán
+Mức độ: Khó
+Nội dung: Độ phức tạp thời gian trung bình của tìm kiếm nhị phân trên mảng đã sắp xếp là gì?
+A. O(1)
+B. O(log n)
+C. O(n)
+D. O(n²)
+Đáp án đúng: B
+Nguồn: Bài giảng thuật toán
+----------------------------------------------------------------------
+
+CÂU 6
+Mã câu hỏi: CH006
+Môn học: Tin học
+Chủ đề: Cơ sở dữ liệu
+Mức độ: Dễ
+Nội dung: SQL là viết tắt của cụm từ nào?
+A. Structured Query Language
+B. Simple Question Language
+C. Sequential Query List
+D. System Quality Logic
+Đáp án đúng: A
+Nguồn: Bài giảng cơ sở dữ liệu
+----------------------------------------------------------------------
+
+CÂU 7
+Mã câu hỏi: CH007
+Môn học: Tin học
+Chủ đề: Mạng máy tính
+Mức độ: Trung bình
+Nội dung: Giao thức nào thường được sử dụng để truyền trang web có mã hóa TLS?
+A. FTP
+B. HTTP
+C. HTTPS
+D. SMTP
+Đáp án đúng: C
+Nguồn: Bài giảng mạng máy tính
+----------------------------------------------------------------------
+
+CÂU 8
+Mã câu hỏi: CH008
+Môn học: Toán
+Chủ đề: Đại số
+Mức độ: Dễ
+Nội dung: Kết quả của 7 × 8 là bao nhiêu?
+A. 54
+B. 56
+C. 58
+D. 64
+Đáp án đúng: B
+Nguồn: Sách Toán cơ bản
+----------------------------------------------------------------------
+
+CÂU 9
+Mã câu hỏi: CH009
+Môn học: Toán
+Chủ đề: Hình học
+Mức độ: Trung bình
+Nội dung: Tổng ba góc trong một tam giác Euclid bằng bao nhiêu độ?
+A. 90°
+B. 180°
+C. 270°
+D. 360°
+Đáp án đúng: B
+Nguồn: Sách Hình học
+----------------------------------------------------------------------
+
+CÂU 10
+Mã câu hỏi: CH010
+Môn học: Vật lý
+Chủ đề: Cơ học
+Mức độ: Dễ
+Nội dung: Đơn vị đo lực trong hệ SI là gì?
+A. Joule
+B. Watt
+C. Newton
+D. Pascal
+Đáp án đúng: C
+Nguồn: Sách Vật lý
+----------------------------------------------------------------------
+
+CÂU 11
+Mã câu hỏi: CH011
+Môn học: Vật lý
+Chủ đề: Điện học
+Mức độ: Trung bình
+Nội dung: Theo định luật Ôm, cường độ dòng điện bằng đại lượng nào?
+A. U × R
+B. U / R
+C. R / U
+D. U + R
+Đáp án đúng: B
+Nguồn: Sách Vật lý
+----------------------------------------------------------------------
+
+CÂU 12
+Mã câu hỏi: CH012
+Môn học: Hóa học
+Chủ đề: Hóa học cơ bản
+Mức độ: Dễ
+Nội dung: Ký hiệu hóa học của oxy là gì?
+A. Ox
+B. O
+C. Oy
+D. Om
+Đáp án đúng: B
+Nguồn: Sách Hóa học
+----------------------------------------------------------------------
+
+CÂU 13
+Mã câu hỏi: CH013
+Môn học: Hóa học
+Chủ đề: Hóa học cơ bản
+Mức độ: Khó
+Nội dung: Ở điều kiện thường, pH nhỏ hơn 7 thường biểu thị dung dịch có tính chất gì?
+A. Bazơ
+B. Trung tính
+C. Axit
+D. Muối luôn trung tính
+Đáp án đúng: C
+Nguồn: Sách Hóa học
+----------------------------------------------------------------------
+
+CÂU 14
+Mã câu hỏi: CH014
+Môn học: Tiếng Anh
+Chủ đề: Ngữ pháp
+Mức độ: Trung bình
+Nội dung: Chọn dạng đúng: She ___ to school every day.
+A. go
+B. going
+C. goes
+D. gone
+Đáp án đúng: C
+Nguồn: Tài liệu tiếng Anh
+----------------------------------------------------------------------
+
+CÂU 15
+Mã câu hỏi: CH015
+Môn học: Tiếng Anh
+Chủ đề: Từ vựng
+Mức độ: Khó
+Nội dung: Từ nào gần nghĩa nhất với “rapid”?
+A. slow
+B. quick
+C. weak
+D. quiet
+Đáp án đúng: B
+Nguồn: Tài liệu tiếng Anh
+----------------------------------------------------------------------
+
+CÂU 16
+Mã câu hỏi: CH016
+Môn học: Toán
+Chủ đề: Đại số
+Mức độ: Dễ
+Nội dung: 1+1=?
+A. 11
+B. 2
+C. 3
+D. 1
+Đáp án đúng: B
+Nguồn: Tự tạo
+----------------------------------------------------------------------
+
+CÂU 17
+Mã câu hỏi: API001
+Môn học: Tin học
+Chủ đề: Science: Computers
+Mức độ: Khó
+Nội dung: CMOS is tech used for constructing integrated circuits. What does CMOS stand for?
+A. Computer-made operating system
+B. Computer-made oscillating static
+C. Complementary metal–oxide–semiconductor
+D. Complementary magnetic-ohms-semiconductor
+Đáp án đúng: C
+Nguồn: Open Trivia DB
+----------------------------------------------------------------------
+
+CÂU 18
+Mã câu hỏi: API002
+Môn học: Tin học
+Chủ đề: Science: Computers
+Mức độ: Khó
+Nội dung: What type of sound chip does the Super Nintendo Entertainment System (SNES) have?
+A. ADPCM Sampler
+B. Programmable Sound Generator (PSG)
+C. FM Synthesizer
+D. PCM Sampler
+Đáp án đúng: A
+Nguồn: Open Trivia DB
+----------------------------------------------------------------------
+
+CÂU 19
+Mã câu hỏi: API003
+Môn học: Tin học
+Chủ đề: Science: Computers
+Mức độ: Trung bình
+Nội dung: Whistler was the codename of this Microsoft Operating System.
+A. Windows 2000
+B. Windows 7
+C. Windows XP
+D. Windows 95
+Đáp án đúng: C
+Nguồn: Open Trivia DB
+----------------------------------------------------------------------
+
+CÂU 20
+Mã câu hỏi: API004
+Môn học: Tin học
+Chủ đề: Science: Computers
+Mức độ: Trung bình
+Nội dung: What does the term MIME stand for, in regards to computing?
+A. Mail Internet Mail Exchange
+B. Multipurpose Internet Mail Extensions
+C. Mail Interleave Method Exchange
+D. Multipurpose Interleave Mail Exchange
+Đáp án đúng: B
+Nguồn: Open Trivia DB
+----------------------------------------------------------------------
+
+CÂU 21
+Mã câu hỏi: API005
+Môn học: Tin học
+Chủ đề: Science: Computers
+Mức độ: Trung bình
+Nội dung: Which of these programming languages is a low-level language?
+A. C#
+B. Assembly
+C. Pascal
+D. Python
+Đáp án đúng: B
+Nguồn: Open Trivia DB
+----------------------------------------------------------------------
+
